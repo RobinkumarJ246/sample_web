@@ -27,7 +27,7 @@ function App() {
       <h3 style={{textAlign:"center"}}>ScatterPlots</h3><select style={{justifyContent:"space-between",display:"flex", alignItems: 'center'}}>
         <option>ScatterPlot</option>
         <option>Line plot</option>
-        <option>Donut Graph</option>
+        <option>Pie Chart</option>
       </select>
       <section style={{ backgroundColor: 'white', height: '100px', display: 'flex' }} className='scatterGraph'>
         <div>
