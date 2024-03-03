@@ -1,16 +1,10 @@
 import LoginPage from "./login";
-import { SignInButton } from "@clerk/clerk-react";
-import { SignUp } from "@clerk/clerk-react";
 
 function App() {
   const DialogFunction = (event) => {
     event.preventDefault();
     alert("This function is blocked");
   };
- 
-  function SignUpPage() {
-    return <SignUp />;
-  }  
 
   return (
     <div className="App">
@@ -20,10 +14,7 @@ function App() {
         </div>
         <div>
           <button style={{ marginRight: '10px' }} onClick={DialogFunction}>Register Admin</button>
-          {/*}<button style={{ marginRight: '10px' }} onClick={DialogFunction}>Login Admin</button>{*/}
-          <SignInButton>
-        <button>Login Admin</button>
-      </SignInButton>
+          <button style={{ marginRight: '10px' }} onClick={DialogFunction}>Login Admin</button>
         </div>
       </nav>
       <div style={{ height: "12px" }}>
